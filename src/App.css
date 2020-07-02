@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 100%;
+}
+
+.timer {
+  display: flex;
+  flex: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4em;
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.timer div:first-child {
+  text-align: center;
+}
+
+.timer div:first-child h1 {
+  margin-bottom: 0.5em;
+}
+
+.timer div:last-child {
+  border: 4px solid #cf66a9;
+  border-radius: 3px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 3em;
+  text-align: center;
+}
+
+section p:first-child,
+.timer div:last-child span {
+  color: #66cf8c;
+  font-size: 3em;
+}
+
+small {
+  color: #cf66a9;
+}
+
+@media screen and (max-width: 480px) {
+  .timer div:last-child {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 3em 1em;
+  }
+}
+
+.outer {
+  text-align: center;
+}
+
+.outer h1 {
+  color: #cf66a9;
+}
+
+.pink {
+  color: #cf66a9 !important;
+}
+
+.green {
+  color: #66cf8c;
+}
+@media screen and (min-width: 416px) {
+  .question-container {
+    display: flex;
+    width: 700px;
+    height: 350px;
+    border: 4px solid #cf66a9;
+    margin: 0 auto;
+    padding: 2em;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.prize-container {
+  margin-top: 40px;
+  border: 3px solid #cf66a9;
+  padding: 30px;
+}
+
+.prize {
+  border: 1px solid #66cf8c !important;
+  background-color: transparent !important;
+  color: #cf66a9;
+  height: 100%;
+}
+
+.prize-button {
+  border-color: #66cf8c !important;
+  color: #66cf8c !important;
+  background-color: transparent !important;
+}
+
+.prize-button:hover {
+  background-color: #66cf8c !important;
+  color: white !important;
+}
+
+.add-button {
+  border-color: #cf66a9 !important;
+  color: #cf66a9 !important;
+  background-color: transparent !important;
+}
+
+.add-button:hover {
+  background-color: #cf66a9 !important;
+  color: white !important;
+}
+
+.prize-row {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 415px) {
+  .question-container-small {
+    margin-top: -60px;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 3em 1em;
+  }
+
+  .remaining {
+    margin-bottom: 25px;
+  }
+  .small-prize {
+    margin-bottom: 15px;
+  }
+
+  .prize-container {
+    border: none;
+    margin-top: -20px;
+  }
+  .outer h1 {
+    font-size: 15px;
+  }
+  .center-h1 h1{
+    font-size: 25px;
+  }
+}
+
+.center-h1 h1{
+  margin-top: 30px;
+  text-align: center;
+  color: #66cf8c;
+}
+
+img {
+  border-radius: 50%;
+}
