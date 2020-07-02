@@ -6,7 +6,6 @@ const path = require("path");
 require("dotenv").config();
 
 const app = express();
-const port = process.env.Port || 5000;
 
 const uri = process.env.ATLAS_URI;
 
@@ -27,7 +26,6 @@ const usersRouter = require("./routes/users");
 app.use("/prizes", prizeRouter);
 app.use("/users", usersRouter);
 
-
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("../build"));
 
@@ -35,7 +33,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "..", "build", "index.html"));
   });
 }
-
+const port = process.env.Port || 5000;
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 }); //starts server
