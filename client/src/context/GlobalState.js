@@ -30,7 +30,7 @@ export const GlobalContextProvider = ({ children }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/users")
+      .get("https://mysterious-refuge-34806.herokuapp.com/users")
       .then(res => {
         dispatch({ type: "FETCH_SUCCESS", payload: res.data });
       })

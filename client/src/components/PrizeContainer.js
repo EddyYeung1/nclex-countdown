@@ -27,7 +27,7 @@ export default function PrizeContainer() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/prizes")
+      .get("https://mysterious-refuge-34806.herokuapp.com/prizes")
       .then(res => {
         setPrizes(res.data);
       })
