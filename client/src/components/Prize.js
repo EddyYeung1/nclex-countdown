@@ -26,13 +26,13 @@ export default function Prize({ title, pointVal, description, counter, id }) {
     };
 
     axios
-      .post(`http://localhost:5000/prizes/update/${id}`, updatePrize)
+      .post(`https://mysterious-refuge-34806.herokuapp.com/prizes/update/${id}`, updatePrize)
       .then(res => console.log("Successfully updated prize"))
       .catch(err => console.log(err));
 
     axios
       .post(
-        "http://localhost:5000/users/update/5ef6ae16e68a8e7b13e84842",
+        "https://mysterious-refuge-34806.herokuapp.com/users/update/5ef6ae16e68a8e7b13e84842",
         updatePoints
       )
       .then(res => console.log("Successfully updated user"))

@@ -21,7 +21,7 @@ export default function Nav() {
 
     axios
       .post(
-        "http://localhost:5000/users/update/5ef6ae16e68a8e7b13e84842",
+        "https://mysterious-refuge-34806.herokuapp.com/users/update/5ef6ae16e68a8e7b13e84842",
         update
       )
       .then(res => console.log("Successfully updated user"))
